@@ -27,16 +27,16 @@ const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.b
  */
 registerBlockType( 'cgb/block-my-first-block', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'my-first-block - CGB Block' ), // Block title.
-	icon: 'shield', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+	title: __( 'my-first-block - My First Block' ), // Block title.
+	icon: 'heart', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: 'common', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'my-first-block — CGB Block' ),
+		__( 'my-first-block — My First Block' ),
 		__( 'CGB Example' ),
 		__( 'create-guten-block' ),
 	],
 
-	/**
+	/*
 	 * The edit function describes the structure of your block in the context of the editor.
 	 * This represents what the editor will render when the block is used.
 	 *
@@ -64,7 +64,7 @@ registerBlockType( 'cgb/block-my-first-block', {
 		);
 	},
 
-	/**
+	/*
 	 * The save function defines the way in which the different attributes should be combined
 	 * into the final markup, which is then serialized by Gutenberg into post_content.
 	 *
